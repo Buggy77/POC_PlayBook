@@ -8,9 +8,10 @@
     - name: Llamada a API
       uri:
         url: "https://jenkins-cicdpoc.apps.cloud.igalvan.com/job/cicdpoc/job/cicdpoc-tasks-pipeline/build?token=97531"
-        method: GET
+        method: POST
         user: "dv-admin"
-        password: "r3dh4t1!"
+        password: "a86945fa128da756b6094e4e3427bcb8"
         force_basic_auth: yes
         status_code: 201
         validate_certs: no
+        body_format: json
