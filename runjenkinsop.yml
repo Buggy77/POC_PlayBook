@@ -7,7 +7,7 @@
       debug: msg="Iniciando ejecución API-Jenkins-OpenShift-CI\CD"
     - name: Llamada a API
       uri:
-        ulr: "https://jenkins-cicdpoc.apps.cloud.igalvan.com/job/cicdpoc/job/cicdpoc-tasks-pipeline/build?token=97531"
+        url: "https://jenkins-cicdpoc.apps.cloud.igalvan.com/job/cicdpoc/job/cicdpoc-tasks-pipeline/build?token=97531"
         method: GET
         user: "dv-admin"
         password: "r3dh4t1!"
