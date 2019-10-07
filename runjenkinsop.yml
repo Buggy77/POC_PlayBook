@@ -1,2 +1,16 @@
 ---
 - name: Ejecuta Jenkins OpenShift CICD
+  hosts: localhost
+
+  tasks:
+    - name: echo ejecución API
+      debug: msg="Iniciando ejecución API-Jenkins-OpenShift-CI\CD"
+    - name: Llamada a API
+      uri:
+        ulr: "https://jenkins-cicdpoc.apps.cloud.igalvan.com/job/cicdpoc/job/cicdpoc-tasks-pipeline/build?token=97531"
+        method: GET
+        user: "dv-admin"
+        password: "r3dh4t1!"
+        force_basic_auth: yes
+        status_code: 201
+        validate_certs: no
